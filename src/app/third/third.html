@@ -1,0 +1,27 @@
+<p>third works!</p>
+
+
+<input type="color" #data>
+<input type="submit" (click)="getData(data.value)"><br><br>
+
+
+<h1 [style.color]="mydata">Masstech Business Solution</h1><br><br>
+
+
+<input type="color" [(ngModel)]="col">
+<h1 [style.color]="col">Two Way Data Binding</h1> <br><br>
+
+First <input type="number" [(ngModel)]="fno" (input)="Calci()"><br>
+Second<input type="number" [(ngModel)]="sno" (input)="Calci()"><br>
+Choice 
+<select [(ngModel)]="choice" (change)="Calci()">
+    <option>+</option>
+    <option>-</option>
+    <option>*</option>
+</select><br>
+
+Result: {{res}}
+
+
+
+
